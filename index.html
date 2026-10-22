@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>CRM для малого бизнеса</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1 id="h1" class="h1">Мини-CRM: Мои клиенты</h1>
+    <div id="all_money" class="all_money">Выручка: 0 ₽</div>
+    <button id="exp" class="exp">Экспорт в Excel (CSV)</button>
+</header>
+<main>
+    <form id="client" class="client">
+        <label for="client_name">Имя клиента</label>
+        <input type="text" id="client_name" placeholder="Анна" required>
+
+        <label for="client_tel">Телефон</label>
+        <input type="tel" id="client_tel" placeholder="+7 (999) 123-45-67" required>
+
+        <label for="usluga">Услуга</label>
+        <select id="usluga" class="usluga">
+            <option value="Стрижка">Стрижка</option>
+            <option value="Маникюр">Маникюр</option>
+            <option value="Массаж">Массаж</option>
+            <option value="Консультация">Консультация</option>
+        </select>
+
+        <label for="data">Дата и время записи</label>
+        <input type="datetime-local" id="data" required>
+
+        <button id="send" type="submit">Добавить клиента</button>
+    </form>
+
+    <input type="text" id="poisk" placeholder="Поиск по имени или телефону...">
+
+    <div id="spis"></div>
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>
